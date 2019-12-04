@@ -1,3 +1,5 @@
+require('dotenv');
+
 const fs = require('fs');
 const readline = require('readline');
 const {google} = require('googleapis');
@@ -8,6 +10,9 @@ const SCOPES = ['https://www.googleapis.com/auth/drive.file'];
 // created automatically when the authorization flow completes for the first
 // time.
 //const TOKEN_PATH = 'token.json';
+const client_secret = process.env.CLIENT_SECRET
+const client_id = process.env.CLIENT_SECRET
+const redirect_uris = process.env.REDIRECT_URIS
 
 // Load client secrets from a local file.
 fs.readFile('curbsideCredentials.json', (err, content) => {

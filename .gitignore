@@ -4,6 +4,7 @@ curbsideCredentials.json
 app.yaml
 .gcloudignore
 token.json
+.env
 
 # noise
 node_modules
