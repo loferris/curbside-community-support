@@ -1,5 +1,9 @@
 # secrets
 credentials.json
+curbsideCredentials.json
+app.yaml
+.gcloudignore
+token.json
 
 # noise
 node_modules
